@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accesibilidad web: lo mínimo que debes saber — El Rincón Del Gato</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f7f7f5;
+      color: #2c2c2c;
+      line-height: 1.7;
+    }
+
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e8e8e8;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    header a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #1a1a1a;
+    }
+
+    header p {
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 0.3rem;
+      font-style: italic;
+    }
+
+    .hero {
+      width: 100%;
+      overflow: hidden;
+      max-height: 380px;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    main {
+      max-width: 740px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #2a6dde;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 2rem;
+      border-bottom: 1.5px solid transparent;
+      transition: border-color 0.2s ease;
+    }
+
+    .back-link:hover {
+      border-bottom-color: #2a6dde;
+    }
+
+    .article-meta {
+      font-size: 0.75rem;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.8rem;
+    }
+
+    .article-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      line-height: 1.3;
+      margin-bottom: 2.5rem;
+    }
+
+    .article-body h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-top: 2.2rem;
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    .article-body p {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 1.2rem;
+    }
+
+    .article-body ul {
+      margin: 0.5rem 0 1.2rem 1.4rem;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .article-body ul li {
+      margin-bottom: 0.4rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      font-size: 0.82rem;
+      color: #bbb;
+      border-top: 1px solid #e8e8e8;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .hero {
+        max-height: 200px;
+      }
+
+      .article-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="../index.html">
+      <h1>El Rincón Del Gato</h1>
+    </a>
+    <p>Diseño, tecnología y creatividad</p>
+  </header>
+
+  <div class="hero">
+    <img src="https://placehold.co/1200x380/feebe8/d42a2a?text=Accesibilidad+web" alt="Accesibilidad web">
+  </div>
+
+  <main>
+    <a class="back-link" href="../index.html">&larr; Volver al blog</a>
+
+    <p class="article-meta">25 de abril, 2026</p>
+    <h1 class="article-title">Accesibilidad web: lo mínimo que debes saber</h1>
+
+    <div class="article-body">
+
+      <p>La accesibilidad web es la práctica de construir sitios y aplicaciones que puedan ser usados por todas las personas, independientemente de sus capacidades físicas, cognitivas o tecnológicas. No es un extra opcional: en muchos países es un requisito legal, y en todos es una responsabilidad ética.</p>
+
+      <h2>HTML semántico como base</h2>
+
+      <p>La accesibilidad empieza por escribir HTML correcto. Los elementos semánticos no solo estructuran el documento visualmente; también comunican su significado a tecnologías asistivas como los lectores de pantalla. Algunas reglas fundamentales:</p>
+
+      <ul>
+        <li>Usa el elemento correcto para cada propósito: <strong>&lt;button&gt;</strong> para acciones, <strong>&lt;a&gt;</strong> para navegación, <strong>&lt;h1&gt;–&lt;h6&gt;</strong> para jerarquía de títulos.</li>
+        <li>No uses <strong>&lt;div&gt;</strong> ni <strong>&lt;span&gt;</strong> para simular botones o enlaces si puedes usar el elemento nativo.</li>
+        <li>Siempre incluye el atributo <strong>lang</strong> en la etiqueta <strong>&lt;html&gt;</strong> para indicar el idioma del contenido.</li>
+        <li>Las imágenes deben tener siempre un atributo <strong>alt</strong> descriptivo; si la imagen es decorativa, usa <strong>alt=""</strong>.</li>
+      </ul>
+
+      <h2>Contraste y legibilidad</h2>
+
+      <p>Aproximadamente el 8% de los hombres tienen algún grado de daltonismo. Las pautas WCAG establecen que el contraste entre texto y fondo debe ser de al menos 4.5:1 para texto normal y 3:1 para texto grande. Para verificar el contraste de tus colores puedes usar herramientas gratuitas en línea como WebAIM Contrast Checker.</p>
+
+      <p>Además del contraste de color, la legibilidad también depende del tamaño de la fuente. Nunca uses texto menor a 14px en contenido principal, y asegúrate de que el interlineado sea suficientemente amplio para facilitar la lectura.</p>
+
+      <h2>Navegación accesible</h2>
+
+      <p>Muchas personas navegan la web únicamente con el teclado, sin usar el ratón. Para garantizar que tu sitio sea navegable en teclado:</p>
+
+      <ul>
+        <li>Todos los elementos interactivos (enlaces, botones, formularios) deben ser alcanzables con la tecla <strong>Tab</strong>.</li>
+        <li>El indicador de foco (el borde que aparece al navegar con Tab) nunca debe eliminarse con <em>outline: none</em> sin reemplazarlo por un estilo alternativo visible.</li>
+        <li>El orden de los elementos en el DOM debe seguir el mismo orden lógico que el visual.</li>
+        <li>Proporciona un enlace de <em>«saltar al contenido»</em> al inicio de la página para que los usuarios de teclado puedan omitir el menú de navegación.</li>
+      </ul>
+
+      <h2>Buenas prácticas esenciales</h2>
+
+      <p>Estas prácticas cubren la mayoría de los casos de accesibilidad con un esfuerzo mínimo:</p>
+
+      <ul>
+        <li>Etiqueta todos los campos de formulario con <strong>&lt;label&gt;</strong>; nunca uses solo el atributo <em>placeholder</em> como sustituto.</li>
+        <li>Usa <strong>aria-label</strong> o <strong>aria-describedby</strong> cuando el contexto visual no es suficiente para un lector de pantalla.</li>
+        <li>Las tablas de datos deben tener encabezados con <strong>&lt;th&gt;</strong> y el atributo <em>scope</em> correspondiente.</li>
+        <li>Valida tu página con herramientas automáticas como axe o Lighthouse, pero recuerda que ninguna herramienta detecta todos los problemas de accesibilidad.</li>
+      </ul>
+
+      <p>Construir accesible no es más difícil que construir sin accesibilidad. Es cuestión de hábito. Empieza por las bases y verás que la mayoría de las mejoras no requieren esfuerzo adicional, solo conciencia.</p>
+
+    </div>
+
+    <a class="back-link" href="../index.html">&larr; Volver al blog</a>
+  </main>
+
+  <footer>
+    &copy; 2026 El Rincón Del Gato. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Rincón Del Gato</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f7f7f5;
+      color: #2c2c2c;
+      line-height: 1.7;
+    }
+
+    /* Header */
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e8e8e8;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #1a1a1a;
+    }
+
+    header p {
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 0.3rem;
+      font-style: italic;
+    }
+
+    /* Hero */
+    .hero {
+      width: 100%;
+      overflow: hidden;
+      max-height: 420px;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Main content */
+    main {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    /* Grid de tarjetas */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+      transition: box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-body {
+      padding: 1.4rem 1.5rem 1.6rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .card-date {
+      font-size: 0.75rem;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 0.6rem;
+      line-height: 1.4;
+    }
+
+    .card-desc {
+      font-size: 0.9rem;
+      color: #666;
+      flex: 1;
+      margin-bottom: 1.2rem;
+    }
+
+    .card-link {
+      display: inline-block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #2a6dde;
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      border-bottom: 1.5px solid transparent;
+      transition: border-color 0.2s ease;
+      align-self: flex-start;
+    }
+
+    .card-link:hover {
+      border-bottom-color: #2a6dde;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      font-size: 0.82rem;
+      color: #bbb;
+      border-top: 1px solid #e8e8e8;
+      margin-top: 4rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .hero {
+        max-height: 220px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>El Rincón Del Gato</h1>
+    <p>Diseño, tecnología y creatividad</p>
+  </header>
+
+  <div class="hero">
+    <img src="/close-up-cat-against-blue-background.png" alt="Banner principal del blog">
+  </div>
+
+  <main>
+    <h2 class="section-title">Últimas entradas</h2>
+
+    <div class="cards">
+
+      <article class="card">
+        <img src="https://placehold.co/600x400/e8f0fe/2a6dde?text=Entrada+1" alt="Imagen entrada 1">
+        <div class="card-body">
+          <span class="card-date">15 de junio, 2026</span>
+          <h3 class="card-title">Cómo estructurar un proyecto web desde cero</h3>
+          <p class="card-desc">Aprende los fundamentos para organizar tus archivos, carpetas y recursos de manera eficiente antes de escribir una sola línea de código.</p>
+          <a class="card-link" href="/blog/entrada-prueba-1">Leer más &rarr;</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://placehold.co/600x400/e8fef0/2a9d52?text=Entrada+2" alt="Imagen entrada 2">
+        <div class="card-body">
+          <span class="card-date">3 de junio, 2026</span>
+          <h3 class="card-title">Aprendiendo HTML y CSS en 2026</h3>
+          <p class="card-desc">Una guía actualizada para quienes quieren comenzar a crear páginas web usando únicamente las tecnologías base del desarrollo frontend.</p>
+          <a class="card-link" href="/blog/aprendiendo-html-css">Leer más &rarr;</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://placehold.co/600x400/fef5e8/d4851a?text=Entrada+3" alt="Imagen entrada 3">
+        <div class="card-body">
+          <span class="card-date">20 de mayo, 2026</span>
+          <h3 class="card-title">Principios de diseño web moderno</h3>
+          <p class="card-desc">Jerarquía visual, espaciado, tipografía y color: los cuatro pilares que definen si un diseño comunica bien o simplemente se ve bien.</p>
+          <a class="card-link" href="/blog/diseno-web-moderno">Leer más &rarr;</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://placehold.co/600x400/fce8fe/9b2ad4?text=Entrada+4" alt="Imagen entrada 4">
+        <div class="card-body">
+          <span class="card-date">7 de mayo, 2026</span>
+          <h3 class="card-title">CSS Grid vs Flexbox: ¿cuándo usar cada uno?</h3>
+          <p class="card-desc">Dos herramientas poderosas, un solo propósito: maquetar. Descubre las diferencias clave y cuándo conviene usar cada sistema de diseño.</p>
+          <a class="card-link" href="/blog/css-grid-vs-flexbox">Leer más &rarr;</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://placehold.co/600x400/feebe8/d42a2a?text=Entrada+5" alt="Imagen entrada 5">
+        <div class="card-body">
+          <span class="card-date">25 de abril, 2026</span>
+          <h3 class="card-title">Accesibilidad web: lo mínimo que debes saber</h3>
+          <p class="card-desc">Construir páginas accesibles no es opcional. Te presentamos las prácticas esenciales para que tu sitio sea usable por todos.</p>
+          <a class="card-link" href="/blog/accesibilidad-web-basica">Leer más &rarr;</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://placehold.co/600x400/e8fefe/2aadb0?text=Entrada+6" alt="Imagen entrada 6">
+        <div class="card-body">
+          <span class="card-date">10 de abril, 2026</span>
+          <h3 class="card-title">Optimización de rendimiento en sitios estáticos</h3>
+          <p class="card-desc">Reducir el peso de las imágenes, evitar bloqueos de renderizado y aprovechar el caché del navegador son pasos simples con gran impacto.</p>
+          <a class="card-link" href="/blog/optimizacion-sitios-estaticos">Leer más &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 El Rincón Del Gato. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

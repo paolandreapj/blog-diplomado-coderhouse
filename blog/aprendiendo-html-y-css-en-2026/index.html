@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprendiendo HTML y CSS en 2026 — El Rincón Del Gato</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f7f7f5;
+      color: #2c2c2c;
+      line-height: 1.7;
+    }
+
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e8e8e8;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    header a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #1a1a1a;
+    }
+
+    header p {
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 0.3rem;
+      font-style: italic;
+    }
+
+    .hero {
+      width: 100%;
+      overflow: hidden;
+      max-height: 380px;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    main {
+      max-width: 740px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #2a6dde;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 2rem;
+      border-bottom: 1.5px solid transparent;
+      transition: border-color 0.2s ease;
+    }
+
+    .back-link:hover {
+      border-bottom-color: #2a6dde;
+    }
+
+    .article-meta {
+      font-size: 0.75rem;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.8rem;
+    }
+
+    .article-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      line-height: 1.3;
+      margin-bottom: 2.5rem;
+    }
+
+    .article-body h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-top: 2.2rem;
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    .article-body p {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 1.2rem;
+    }
+
+    .article-body ul {
+      margin: 0.5rem 0 1.2rem 1.4rem;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .article-body ul li {
+      margin-bottom: 0.4rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      font-size: 0.82rem;
+      color: #bbb;
+      border-top: 1px solid #e8e8e8;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .hero {
+        max-height: 200px;
+      }
+
+      .article-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="../index.html">
+      <h1>El Rincón Del Gato</h1>
+    </a>
+    <p>Diseño, tecnología y creatividad</p>
+  </header>
+
+  <div class="hero">
+    <img src="https://placehold.co/1200x380/e8fef0/2a9d52?text=HTML+y+CSS+en+2026" alt="Aprendiendo HTML y CSS en 2026">
+  </div>
+
+  <main>
+    <a class="back-link" href="../index.html">&larr; Volver al blog</a>
+
+    <p class="article-meta">3 de junio, 2026</p>
+    <h1 class="article-title">Aprendiendo HTML y CSS en 2026</h1>
+
+    <div class="article-body">
+
+      <p>En un ecosistema dominado por frameworks y herramientas de todo tipo, aprender HTML y CSS sigue siendo el punto de partida más sólido para cualquier persona que quiera crear para la web. En 2026, estas tecnologías han madurado y ofrecen capacidades que antes requerían librerías externas.</p>
+
+      <h2>HTML5 actual</h2>
+
+      <p>HTML5 ya no es solo la versión más reciente de HTML; es el estándar consolidado sobre el que se construye toda la web. En 2026, lo más importante no es memorizar etiquetas, sino entender el uso semántico de cada elemento:</p>
+
+      <ul>
+        <li>Usa <strong>&lt;header&gt;</strong>, <strong>&lt;main&gt;</strong>, <strong>&lt;footer&gt;</strong> y <strong>&lt;nav&gt;</strong> para estructurar el documento correctamente.</li>
+        <li>Prefiere <strong>&lt;article&gt;</strong> y <strong>&lt;section&gt;</strong> sobre <strong>&lt;div&gt;</strong> cuando el contenido tiene significado propio.</li>
+        <li>Los atributos <em>alt</em>, <em>lang</em> y <em>aria-*</em> son fundamentales para la accesibilidad.</li>
+        <li>El atributo <em>loading="lazy"</em> en imágenes mejora la performance sin esfuerzo adicional.</li>
+      </ul>
+
+      <h2>CSS moderno</h2>
+
+      <p>CSS ha crecido enormemente. Hoy es posible lograr layouts complejos, animaciones y variables de diseño sin necesidad de preprocesadores ni frameworks. Las herramientas más importantes del CSS moderno incluyen:</p>
+
+      <ul>
+        <li><strong>Custom properties</strong> (variables CSS) para mantener coherencia visual.</li>
+        <li><strong>Grid y Flexbox</strong> para maquetación bidimensional y unidimensional.</li>
+        <li><strong>:is(), :where(), :has()</strong> para selectores más expresivos y eficientes.</li>
+        <li><strong>clamp()</strong> para tipografía y espaciados verdaderamente fluidos.</li>
+        <li><strong>@layer</strong> para controlar la cascada de estilos con precisión.</li>
+      </ul>
+
+      <h2>Diseño responsive</h2>
+
+      <p>El diseño responsive ya no es opcional. Hoy los dispositivos móviles representan más del 60% del tráfico web global. Las claves para un diseño responsive bien ejecutado son:</p>
+
+      <ul>
+        <li>Siempre incluir la meta etiqueta <em>viewport</em> en el <em>&lt;head&gt;</em>.</li>
+        <li>Diseñar primero para móvil y luego ampliar para pantallas grandes (<em>mobile-first</em>).</li>
+        <li>Usar unidades relativas como <em>rem</em>, <em>em</em>, <em>%</em> y <em>vw/vh</em> en lugar de píxeles fijos.</li>
+        <li>Aplicar <em>media queries</em> para adaptar el layout en puntos de corte naturales del contenido.</li>
+      </ul>
+
+      <h2>Buenas prácticas</h2>
+
+      <p>Más allá de las herramientas, los hábitos hacen la diferencia. Algunas prácticas que todo desarrollador debería adoptar desde el inicio:</p>
+
+      <ul>
+        <li>Escribe código limpio y con indentación consistente.</li>
+        <li>No agregues estilos que no uses; el CSS innecesario tiene costo.</li>
+        <li>Valida tu HTML con el validador oficial del W3C.</li>
+        <li>Prueba siempre en más de un navegador antes de considerar tu trabajo terminado.</li>
+      </ul>
+
+      <p>Dominar HTML y CSS con profundidad te da una base que ningún framework puede reemplazar. Los frameworks cambian; los estándares permanecen.</p>
+
+    </div>
+
+    <a class="back-link" href="../index.html">&larr; Volver al blog</a>
+  </main>
+
+  <footer>
+    &copy; 2026 El Rincón Del Gato. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
